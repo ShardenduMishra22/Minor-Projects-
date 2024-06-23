@@ -29,7 +29,7 @@ function ValidateGuess(guess){
         alert("The Number is beyond the range");
     }else{
         GuessMade.push(guess);
-        if(NumGuess === GuessAllowed){
+        if(NumGuess === GuessAllowed + 1){
             displayGuess(guess);
             displayMessage(`Game Over !! The number chosen was ${ChosenNumber}`);
             endGame();
